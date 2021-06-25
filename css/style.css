@@ -34,12 +34,12 @@ header{
 .hero-container::before{
     content: '';
     position: absolute;
-    width: 58%;
+    width: 47%;
     height: 50%;
-    background:#e5761c;
-    right: 10.5%;
+    background: #e5761c;
+    right: 21.5%;
     z-index: 1;
-    top:45%;
+    top: 45%;
     transform: translateY(-50%);
 }
 .team-advice{
@@ -65,50 +65,31 @@ p.description{
     width: 270px;
     margin-bottom: 15px;
 }
-button:focus{
-    outline: none;
+.custom__btn{
+    background-color: #B65914;
 }
-button{
-    padding: 14px;
-    padding-right: 0;
-    outline:none;
-    text-transform: uppercase;
-    font-weight: bold;
-    background:#aa5819;
-    border: 1px solid #aa5819;
-    font-size: 12px;
-    color:#fff;
-    border-radius: 2px;
-    cursor: pointer;
-}
-button span{
-    background: #fd852a;
-    padding: 19.5px;
-    padding-left: 10px;
-    padding-top: 14.5px;
-    top: -2px;
-    position: relative;
-    right: -1px;
-    border-radius: 0 2px 2px 0;
-    margin-left: 10px;
-}
-
 .content-info,.img-content{
     z-index: 10;
     position:relative;
 }
 .img_1,.img_3{
     position:absolute;
+    width: 125px;
+    height: 125px;
 }
 
 .img_1{
-    top:10%;
-    right:25%;
+    top: 7%;
+    right: 38%;
     z-index: 20;
 }
 .img_3{
     bottom:10%;
     left:-20%;
+}
+img.main_img {
+    width: 235px;
+    height: 370px;
 }
 .main-img-content{
     position: relative;
@@ -125,25 +106,38 @@ button span{
     opacity: 0.6;
 }
 
-
-/* @media (min-width:991px) {
-    .d-md-flex{
-        width: 80%;
-        margin:0 auto;
-        display: flex;
-        /* align-items: center; */
-        /* height:100%;
-        justify-content: space-between;
-    }
-} */
-
-
-@media (max-width: 991px){
-    header{
-        height: 100%;
-    }
+.img_1,.img_3,.dot,.dot_2{
+    position:absolute;
 }
-
+.img_3,.dot{
+    bottom:10%;
+    left:-20%;
+}
+.dot{
+    /* top:0; */
+    z-index: -1;
+    width: 70%;
+    bottom: -13%;
+    height: 65%;
+    right: 50%;
+    left: auto;
+}
+.dot_2{
+    top: 2%;
+    right: 41%;
+    width: 20%;
+    z-index: -1;
+}
+.career_title{
+    font-size: 120px;
+    text-transform: uppercase;
+    position: absolute;
+    right: -23%;
+    transform: rotate(90deg);
+    top: 50%;
+    font-weight: bold;
+    color: #323232;
+}
 
 
 
