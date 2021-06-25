@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --main-color:#e5761c;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-btn{
+    color: white;
+    border: 1px solid #E5761D;
+}
+.contact-btn:hover{
+    background-color: #E5761D;
+}
+
+
+/* .container {
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px; 
+    padding-top: 150px;
+} */
+.container::before{
+    content: '';
+    position: absolute;
+    width: 58%;
+    height: 50%;
+    background:var(--main-color);
+    right: 15%;
+    z-index: 1;
+    top:45%;
+    transform: translateY(-50%);
+}
+.team_slogan{
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+h1.title{
+    color: #f5f5f4;
+    max-width: 400px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+}
+
+p.description{
+    color:#d8d8d8;
+    width: 270px;
+    margin-bottom: 15px;
+}
+button:focus{
+    outline: none;
+}
+button{
+    padding: 14px;
+    padding-right: 0;
+    outline:none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background:#aa5819;
+    border: 1px solid #aa5819;
+    font-size: 12px;
+    color:#fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+button span{
+    background: #fd852a;
+    padding: 19.5px;
+    padding-left: 10px;
+    padding-top: 14.5px;
+    top: -2px;
+    position: relative;
+    right: -1px;
+    border-radius: 0 2px 2px 0;
+    margin-left: 10px;
+}
+
+.info_wrap,.img_wrap{
+    z-index: 10;
+    position:relative;
+}
+.img_1,.img_3{
+    position:absolute;
+}
+
+.img_1{
+    top:10%;
+    right:25%;
+    z-index: 20;
+}
+.img_3{
+    bottom:10%;
+    left:-20%;
+}
+.main_img_wrap{
+    position: relative;
+    width:fit-content;
+}
+.main_img_wrap::after{
+    content: '';
+    top: 0;
+    right:0;
+    position: absolute;
+    background: #ff7d12;
+    width: 30%;
+    height:100%;
+    opacity: 0.7;
+}
+
+
+/* @media (min-width:991px) {
+    .d-md-flex{
+        width: 80%;
+        margin:0 auto;
+        display: flex;
+        /* align-items: center; */
+        /* height:100%;
+        justify-content: space-between;
+    }
+} */
+
+
+@media (max-width: 991px){
+    header{
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
