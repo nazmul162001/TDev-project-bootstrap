@@ -6,6 +6,40 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* SHORT CODE  */
+
+    /* for main color  */
+
+:root{
+    --main-color:#e5761c;
+}
+
+ /* FOR LEFT VIRTICAL TEXT  */
+.left{
+    position: relative;
+}
+.left-content{
+    font-size: 15px;
+    text-transform: uppercase;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 18%;
+    transform: rotate(90deg);
+    top: 45%;
+    font-weight: bold;
+    color: #656565;
+    line-height: 18px;
+}
+span.span__bold{
+    font-size:70px ;
+    line-height: 50px;
+    color: #323232;
+}
+
+
+/* HEADER SECTION START HERE  */
+
 header{
     width: 100%;
     height: 100vh;
@@ -13,30 +47,91 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
+
+
+/* navbar section  */
+
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+    .dropdown-menu{
+        border:none;
+    }
+    .dropdown-item{
+        padding: 12px 60px 12px 20px;
+        font-size: 15px;
+        font-family:arial;
+        color:black;
+        font-weight: lighter;
+        background-color: #2E2E2E;
+        transform-origin: center;
+        animation :rotate 1.5s ease 1;
+    }
+    .d_down{
+        padding-right: 12px;
+    }
+    .dropdown-item{
+        position: relative;
+    }
+
+    .extra-cls{
+        position: absolute;
+        padding: 10px 12px;
+        border: .5px solid var(--main-color);
+        right: 5%;
+    }
+    @keyframes rotate{
+        0%{transform: perspective(600px) rotatey(90deg); transform-origin:center;}
+        100%{transform: perspective(600px) rotatey(0deg); transform-origin:center;}
+    }
+    
+    .dropdown-item:nth-of-type(1){
+        animation-delay: 0s;
+    }
+    .dropdown-item:nth-of-type(2){
+        animation-delay: 0.1s;
+    }
+    .dropdown-item:nth-of-type(3){
+        animation-delay: 0.2s;
+    }
+    .dropdown-item:nth-of-type(4){
+        animation-delay: 0.3s;
+    }
+    .dropdown-item:nth-of-type(5){
+        animation-delay: 0.4s;
+    }
+    .dropdown-item:nth-of-type(6){
+        animation-delay: 0.5s;
+    }
+    .dropdown-item{
+        color: #fff;
+    }
+    .dropdown-item:hover{
+        background-color: #343434;
+        color:white;
+    }
+    
+ /* contact button  */
 
 .contact-btn{
     color: white;
-    border: 1px solid #E5761D;
+    border: 1px solid var(--main-color);
 }
 .contact-btn:hover{
-    background-color: #E5761D;
+    background-color: var(--main-color);
 }
 
 
-/* .container {
-    max-width: 1200px;
-    position: relative;
-    margin: 0 auto;
-    padding: 10px; 
-    padding-top: 150px;
-} */
+            /* hero section  */
+
 .hero-container::before{
     content: '';
     position: absolute;
     width: 47%;
     height: 50%;
-    background: #e5761c;
+    background: var(--main-color);
     right: 21.5%;
     z-index: 1;
     top: 45%;
@@ -44,7 +139,7 @@ header{
 }
 .team-advice{
     text-transform: uppercase;
-    color: #e5761c;
+    color: var(--main-color);
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -134,15 +229,79 @@ img.main_img {
     position: absolute;
     right: -23%;
     transform: rotate(90deg);
-    top: 50%;
+    top: 46%;
     font-weight: bold;
     color: #323232;
 }
 
 
+/* Open roles section  */
+.open__roles{
+    width: 100%;
+    background-color: #252525;
+}
+.content-bg{
+    background-color: #fff;
+    padding: 100px;
+}
 
-
-
-
-
-
+table {
+    font-family: arial, sans-serif;
+    width: 100%;
+  }
+ 
+  tr{
+      border: none;
+  }
+  
+  td, th {
+    border:none;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgba(221, 221, 221, 0.7);
+  }
+  i.fas.fa-angle-right {
+    color: var(--main-color);
+    padding: 10px 12px;
+    border: .5px solid var(--main-color);
+    font-weight: 300;
+}
+i.fas.fa-angle-right:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+table th{
+    color: var(--main-color);
+    font-size: 12px;
+    font-weight: 600;
+}
+table td{
+    font-weight: 700;
+    font-size: 12px;
+}
+td.post{
+    font-size: 16px;
+    font-weight: 700;
+}
+p.p__1{
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+p.p__2{
+    font-size: 16px;
+    letter-spacing: .1px;
+}
+span.roles{
+    color: var(--main-color);
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+h2.t__bold{
+    font-weight: 700;
+    letter-spacing: .1px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
