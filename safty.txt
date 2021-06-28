@@ -1,0 +1,196 @@
+html
+
+
+<!-- all about  -->
+
+<section class="all_about">
+  <div class="container-fluid about-container">
+     <!-- virtical text  -->
+     <div class="col-md-1 left">
+      <div class="left-content">
+        <span>OPEN</span>
+        <span>ROLES</span> 
+        <span class="span__bold">003</span>
+      </div>
+  </div> <!--END-->
+    <div class="middle">
+        <div class="middle__content">
+            <img src="img/about/main.jpg" alt="ss">
+            
+            <div class="text-dark">
+              <span class="roles text-uppercase">current openings</span>
+              <h2 class="t__bold">open roles</h2>
+              <p class="p__1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quam!</p>
+              <p class="p__2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam cum sint nihil. Natus magnam ullam amet dolore voluptate et</p>
+              
+             </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="right__content">
+            <div class="right__content-left">
+                <div class="card">
+                    <div class="icon">
+                        <img src="img/about/icon.svg" alt="dd">
+                    </div>
+                    <div class="title">safety</div>
+                    <div class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+                        dolorem?</div>
+                    <div class="number_container">
+                        <div class="number">0</div>
+                        <div class="number">0</div>
+                        <div class="number">1</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <img src="img/about/icon.svg" alt="dd">
+                    </div>
+                    <div class="title">safety</div>
+                    <div class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+                        dolorem?</div>
+                    <div class="number_container">
+                        <div class="number">0</div>
+                        <div class="number">0</div>
+                        <div class="number">3</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <img src="img/about/icon.svg" alt="dd">
+                    </div>
+                    <div class="title">safety</div>
+                    <div class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+                        dolorem?</div>
+                    <div class="number_container">
+                        <div class="number">0</div>
+                        <div class="number">0</div>
+                        <div class="number">5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="right__content-right">
+                <div class="content__middle">
+                    <div class="card">
+                        <div class="icon">
+                            <img src="img/about/icon.svg" alt="dd">
+                        </div>
+                        <div class="title">safety</div>
+                        <div class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+                            dolorem?</div>
+                        <div class="number_container">
+                            <div class="number">0</div>
+                            <div class="number">0</div>
+                            <div class="number">2</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <img src="img/about/icon.svg" alt="dd">
+                        </div>
+                        <div class="title">safety</div>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+                            dolorem?</p>
+                        <div class="number_container">
+                            <div class="number">0</div>
+                            <div class="number">0</div>
+                            <div class="number">4</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</section>
+
+
+css
+
+
+/* All about section  */
+
+.about-container{
+    display: flex;
+  }
+
+  .middle {
+    flex: 1 1 20%;
+  }
+  .right {
+    flex: 1 1 65%;
+  }
+  .left__content {
+    display: flex;
+    flex-direction: column;
+    transform: rotate(90deg);
+    margin-top: 100px;
+  }
+  
+  .middle__content {
+    margin-top: 50px;
+    padding: 0 50px;
+  }
+  
+  .right__content {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+  }
+  .para{
+    font-size: 12px;
+
+  }
+  .right__content-left {
+    flex: 1 1 50%;
+  }
+  .right__content-right {
+    flex: 1 1 50%;
+  }
+  .content__middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .card {
+    padding: 18px;
+    margin-bottom: 10px;
+    position: relative;
+    border: none;
+  }
+  
+  .number_container {
+    position: absolute;
+    top: 20px;
+    line-height: 78px;
+  }
+  
+  .number {
+    font-size: 60px;
+    font-weight: 700;
+    opacity: 0.3;
+  }
+  .number:nth-child(1) {
+    margin-top: 7px;
+  }
+  .number:nth-child(2) {
+    margin-top: -20px;
+    margin-bottom: -30px;
+  }
+  .number:nth-child(3) {
+    margin-left: 5px;
+    transform: rotate(90deg);
+  }
+  .title {
+    margin: 20px 0;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  span.roles {
+    display: block;
+    padding: 30px 0;
+}
