@@ -37,6 +37,30 @@ span.span__bold{
     color: #323232;
 }
 
+    /* FOR RIGHT VERTICAL FEXT  */
+
+    .constructor_area .left{
+        position: relative;
+    }
+    .constructor_area .left-content{
+        font-size: 15px;
+        text-transform: uppercase;
+        position: absolute;
+        display: flex;
+        flex-direction: column-reverse;
+        transform: rotate(90deg);
+        top: -308px;
+        left: 811px;
+        font-weight: bold;
+        color: #656565;
+        line-height: 18px;
+    }
+    .constructor_area span.span__bold{
+        font-size:70px ;
+        line-height: 50px;
+        color: #323232;
+    }
+
 /* vertical text two  */
 .all_about .left-content{
     right: 18%;
@@ -375,7 +399,11 @@ h2.t__bold{
     padding: 80px;
     z-index: 2;
 }
-
+.hero .hero-container .hero-right .texts h4 {
+    font-size: 16px;
+    color: var(--main-color);
+    font-weight: 600;
+}
 .hero .hero-container .hero-right .square {
     width: 350px;
     height: 370px;
@@ -390,6 +418,26 @@ h2.t__bold{
     background: url(../img/general/dots.svg);
     top: -28%;
     left: -25%;
+    z-index: 1;
+}
+.img_strike::after{
+    content: '';
+    position: absolute;
+    width: 102%;
+    height: 34%;
+    background: url(../img/general/dots.svg);
+    top: 85%;
+    left: -54%;
+    z-index: 1;
+}
+.img_strike-2::after{
+    content: '';
+    position: absolute;
+    width: 37%;
+    height: 57%;
+    background: url(../img/general/dots.svg);
+    top: -27%;
+    left: 172%;
     z-index: 1;
 }
 
@@ -510,19 +558,14 @@ i.fal.fa-angle-right {
     letter-spacing: 12px;
 }
 .cmn-icon {
-    padding: 3px;
+    padding: 7px 0PX 7PX 10PX;
     border: .5px solid #E6771E;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 footer hr{
     color: #E6771E;
     border-bottom: 2px solid #E6771E;
 }
 .bg-footer{
-    background-color: #242424;
-}
-
-.services_line{
-    display: flex;
-    flex-direction: ;
+    background-color: #252525;
 }
